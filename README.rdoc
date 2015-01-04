@@ -5,9 +5,7 @@ In order to extract sequences from FASTA format I've used Biopython library.
 
 Then I've used bash sort function to sort all rows by length:
 
-```
 $ sort -S1G -t"," -k2nr,2 -T"sort_tmp" -o"nr_sorted" nr_reduced
-```
 
 Then I've cleaned the data (using cleaner.py) removing sequences with not allowed alphabet characters and also removing lengths.
 
